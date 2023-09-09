@@ -1,1 +1,7 @@
 .env
+
+#log
+*.log
+
+#vendoring
+vendor

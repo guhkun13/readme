@@ -18,6 +18,7 @@ type App struct {
 	NameDB     string `env:"DB_NAME"`
 	PortDB     string `env:"DB_PORT"`
 	HostDB     string `env:"DB_HOST"`
+	LocationDB string `env:"DB_LOCATION"`
 	Port       string `env:"PORT"`
 }
 

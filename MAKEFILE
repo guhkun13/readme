@@ -102,6 +102,6 @@ bin-deps:
 	GOBIN=$(LOCAL_BIN) go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
 	GOBIN=$(LOCAL_BIN) go install github.com/golang/mock/mockgen@latest
 
-.PHONY: watch
-watch:
+.PHONY: run
+run:
 	CompileDaemon --build="go build -o main cmd/main.go" --command="./main"
