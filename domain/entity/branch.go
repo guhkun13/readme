@@ -1,6 +1,7 @@
 package entity
 
 type Branch struct {
-	name string
-	id   string
+	id      string
+	name    string
+	wilayah string //optional -->
 }

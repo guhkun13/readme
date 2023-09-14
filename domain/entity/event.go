@@ -16,8 +16,10 @@ type Event struct {
 	endTime     *time.Time
 	location    string
 	description string
-	attendant   int
-	organizer   *Branch
+
+	branch          *Branch
+	attendant_count int
+	attendants      *[]Attendant //optional
 }
 
 type EventDTO struct {

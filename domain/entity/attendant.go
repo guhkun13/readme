@@ -2,5 +2,11 @@ package entity
 
 type Attendant struct {
 	userID string
-	event  *Event
+	name   string
+}
+
+type Invitation struct {
+	attendant Attendant
+	event     Event
+	isConfirm bool
 }
