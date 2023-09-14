@@ -2,10 +2,11 @@ package entity
 
 import (
 	"errors"
-	"event-service/pkg/customerror"
 	"time"
 
 	"github.com/google/uuid"
+
+	"event-service/pkg/customerror"
 )
 
 type Event struct {
@@ -15,8 +16,8 @@ type Event struct {
 	endTime     *time.Time
 	location    string
 	description string
-
-	organizer *Branch
+	attendant   int
+	organizer   *Branch
 }
 
 type EventDTO struct {
